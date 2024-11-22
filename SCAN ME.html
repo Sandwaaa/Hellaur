@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Miss You</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #7a4c9c, #9b6f99, #9e78b7);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            padding: 50px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 72px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+            animation: pulse 2s infinite;
+        }
+        p {
+            font-size: 18px;
+            color: #f1c6d1;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .heart {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 100px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { color: #f1c6d1; }
+            50% { color: #9e78b7; }
+            100% { color: #f1c6d1; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: translateX(-50%) scale(1); }
+            50% { transform: translateX(-50%) scale(1.2); }
+            100% { transform: translateX(-50%) scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">💖</div>
+    <h1>I MISS YOU</h1>
+    <p>I'm sorry for acting up earlier.</p>
+</body>
+</html>
